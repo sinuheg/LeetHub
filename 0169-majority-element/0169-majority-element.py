@@ -1,8 +1,6 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        print (nums)
         nums.sort()
-        print(nums)
         start = 0
         end = 0
         count = 0
