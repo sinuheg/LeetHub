@@ -24,9 +24,7 @@ class Solution:
                 elif token == '*':
                     result = operand_1 * operand_2
                 else:
-                    result = abs(operand_1) // abs(operand_2)
-                    if operand_1 * operand_2 < 0:
-                        result = -result
+                    result = int(operand_1/ operand_2)
                 operand_stack.append(result)
             else:
                 operand_stack.append(int(token))
