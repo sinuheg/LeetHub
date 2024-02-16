@@ -2,8 +2,6 @@ class Solution:
     def search(self, arr: List[int], target: int) -> int:
         low = 0
         top = len(arr)-1
-        if target < arr[low] or target > arr[top]:
-            return -1
         while low <= top:
             mid = (top + low) // 2
             if arr[mid] == target:
