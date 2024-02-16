@@ -7,9 +7,7 @@ class Solution:
             if arr[mid] == target:
                 return mid
             elif target > arr[mid]:
-                # pick right side
                 low = mid+1
-            elif target < arr[mid]:
-                # go to left
+            else:
                 top = mid-1
         return -1
